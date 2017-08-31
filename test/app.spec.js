@@ -47,7 +47,7 @@ describe('Very Simple To Do App', function main() {
   it('should add todo item with priority', () =>
     nightmare
       .goto(url)
-      .select('select.create-todo-priority', '1')
+      .select('select.create-todo-priority', '3')
       .type('textarea.create-todo-text', 'ITEM')
       .click('button.create-todo')
       .wait(500)
